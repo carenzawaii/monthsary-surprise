@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Monthsary!</title>
+    <style>
+        body {
+            background-color: #fce4ec;
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding: 50px;
+        }
+        .heart {
+            color: #e91e63;
+            font-size: 100px;
+            position: relative;
+            animation: moveHeart 3s infinite;
+        }
+        @keyframes moveHeart {
+            0% { top: 0px; }
+            50% { top: 20px; }
+            100% { top: 0px; }
+        }
+        h1 {
+            color: #ad1457;
+        }
+        p {
+            color: #880e4f;
+            font-size: 20px;
+        }
+        .message {
+            display: none;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Happy Monthsary, <span id="girlfriendName">My Girlfriend</span>!</h1>
+    <div class="heart" id="heart">❤️</div>
+    <div class="message" id="message">
+        <p>Today is a special day as we celebrate another month of our beautiful journey together.</p>
+        <p>Thank you for all the love, joy, and memories we've created so far. I look forward to many more amazing moments with you.</p>
+        <p>With all my love,</p>
+        <p>Waii</p>
+        <p id="date">July 26, 2024</p>
+    </div>
+    <script>
+        const girlfriendName = "Kak Adiesty";
+        const date = "July 26, 2024";
+
+        document.getElementById('Kak Adiesty').innerText = Wina;
+        document.getElementById('date').innerText = date;
+
+        setTimeout(() => {
+            document.getElementById('heart').style.display = 'none';
+            document.getElementById('message').style.display = 'block';
+        }, 5000); // Show the message after 5 seconds
+    </script>
+</body>
+</html>
